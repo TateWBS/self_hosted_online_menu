@@ -1,0 +1,18 @@
+.menu {
+  background: #fff;
+  ul{
+    list-style-type: '';
+    font-size: 2em;
+    a {
+      color: black;
+      text-decoration: none;
+      :hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  footer {
+    height:auto;
+    background: black;
+  }
+}
