@@ -3,7 +3,6 @@ import './App.scss';
 import list from './list.json';
 import Table from 'react-bootstrap/Table';
 import FoodModal from './components/modal';
-import Footer from './components/footer';
 import logo from './images/logo.jpg';
 
 function App() {
@@ -22,7 +21,18 @@ function App() {
       )
     })
   );
-
+  const [appetizer2] = useState(
+    list.appetizer2.map((obj, i) => {
+      return (
+        <tr key={i} onClick={() => setMenu({ food: obj.food, shortDescription: obj.shortDescription, price: obj.price, image: obj.image, description: obj.description })}>
+          <td>{i + 1}</td>
+          <td className="text-decoration-underline">{obj.food}</td>
+          <td>{obj.shortDescription}</td>
+          <td>${obj.price.toString()}</td>
+        </tr >
+      )
+    })
+  );
   useEffect(() => {
 
   }, []);
@@ -52,7 +62,9 @@ function App() {
         </div>
 
         <h3 className="text-center mb-4 mt-5">Click the item to learn more about it!</h3>
-
+        
+        
+        {/* Your first Category */}
         <h2 className="text-center">Category</h2>
         <div className="mb-5 d-flex">
           <Table striped bordered hover>
@@ -64,7 +76,6 @@ function App() {
                 <th>Price</th>
               </tr>
             </thead>
-
             <tbody>
               {
                 appetizer
@@ -72,14 +83,35 @@ function App() {
             </tbody>
           </Table>
         </div>
+        {/* End of your first category */}
+        {/* Paste your first category under here to create a second category */}
+
+
+
+
+
+
+        {/* Bottom of second category */}
+
+
+
+
+
+
+
+
+
+
+
 
       </div>
+
+
       <FoodModal
         {...menu}
         show={!!menu}
         onHide={() => setMenu(null)}
       />
-      <Footer />
     </div>
   );
 }

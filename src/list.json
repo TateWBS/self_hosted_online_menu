@@ -8,6 +8,29 @@
             "image": "https://www.readersdigest.ca/wp-content/uploads/2015/11/gourmet-burger.jpg"
         },
         {
+            "food": "Original Hamburger 1.0",
+            "shortDescription": "This hamburger has the best tasty, spicy, and it is juicey but it's more expensive",
+            "description": "This hamburger has the best tasty, spicy, and it is juicey beyond anything you could hope for! Except its more expensive!",
+            "price": 17.99,
+            "image": "https://airfryermasterchef.com/wp-content/uploads/2020/06/hamburger.jpg"
+        },
+        {
+            "food": "Food Name",
+            "shortDescription": "This is the short description (before its clicked)",
+            "description": "This is the long description (after its clicked)",
+            "price": "This the price",
+            "image": "Location of Image"
+        }
+    ],
+    "appetizer2": [
+        {
+            "food": "Original Hamburger2",
+            "shortDescription": "This hamburger has the best tasty, spicy, and it is juicey",
+            "description": "This hamburger has the best tasty, spicy, and it is juicey beyond anything you could hope for!",
+            "price": 4.99,
+            "image": "https://www.readersdigest.ca/wp-content/uploads/2015/11/gourmet-burger.jpg"
+        },
+        {
             "food": "Original Hamburger 2.0",
             "shortDescription": "This hamburger has the best tasty, spicy, and it is juicey but it's more expensive",
             "description": "This hamburger has the best tasty, spicy, and it is juicey beyond anything you could hope for! Except its more expensive!",
